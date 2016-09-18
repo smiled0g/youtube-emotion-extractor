@@ -6,6 +6,7 @@ Using Affectiva API, we can detect emotions present in each frame of a Youtube v
 
 ### Limitation and Workaround
 Since Affectiva Javascript API is only available in browser, and takes image in form of canvas's `imageData`, this tool will be running in browser instead of in a standalone node.js application. Here's how it works:
+
 1. A Youtube video is loaded into the page, playing under a `video` tag.
 2. The playing video is then rendered to play on a `canvas`.
 3. Each image frame is pulled from the canvas, and then mapped to words/sentences spoken from Youtube's annotation.
